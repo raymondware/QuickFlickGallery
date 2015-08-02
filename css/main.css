@@ -1,0 +1,240 @@
+/* RESET */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+	font-family: helvetica, arial, sans-serif;
+	font-size: 1em;
+	color: #66656a;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+	}
+
+body {
+	background: #cccccc;
+	margin-top: 40px;
+	margin-bottom: 40px;
+	padding: 10px;
+}
+
+h1 {
+	font-family: helvetica, arial, sans-serif;
+	font-size: 2em;
+	font-weight: bold;
+	color: #545459;
+}
+
+#wrapper {
+	max-width: 1280px;
+    min-height: 200px;
+    margin: 0 auto;
+    background-color: #e9e9e9;
+    border-radius: 7px;
+    padding: 10px 20px 10px 20px;
+}
+
+#logo {
+	width: 25%;
+	float: left;
+}
+
+#search_container {
+	width: 70%;
+	float: right;
+	text-align: right;
+	position: relative;
+}
+
+#search_query {
+	width: 98%;
+	height: 50px;
+	border: none;
+	outline: none;
+	padding: 0px 0px 0px 20px;
+	font-size: 14px;
+	color: #767580;
+	font-weight: bold;
+}
+
+#submit {
+    width: 150px;
+    height: 40px;
+    background-color: #3ed179;
+    border: none;
+    outline: none;
+    position: absolute;
+    top: 5px;
+    right: 2px;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 14px;
+}
+
+#submit:hover {
+	background-color: #2a9655;
+}
+
+#photo_container {
+    margin: 1.5em 0;
+    padding: 0;
+    -moz-column-gap: 1.5em;
+    -webkit-column-gap: 1.5em;
+    column-gap: 1.5em;
+    font-size: .85em;
+}
+
+.photo-item {
+    display: inline-block;
+    background: #fff;
+    border: 4px solid #fff;
+    border-bottom: 3px solid #fff;
+    margin: 0 0 5px;
+    width: 100%;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-shadow: 2px 2px 4px 0 #ccc;
+}
+
+@media only screen and (min-width: 400px) {
+    #photo_container {
+        -moz-column-count: 2;
+        -webkit-column-count: 2;
+        column-count: 2;
+    }
+    
+    #logo {
+	    float: none;
+	    width: 98%;
+	    text-align: center;
+    }
+    
+   #search_container {
+		width: 98%;
+		float: none;
+		text-align: center;
+		margin-top: 15px;
+	} 
+	
+	#submit {
+		right: -7px;
+	}
+}
+
+@media only screen and (min-width: 700px) {
+    #photo_container {
+        -moz-column-count: 3;
+        -webkit-column-count: 3;
+        column-count: 3;
+    }
+    
+    #logo {
+	    float: none;
+	    width: 98%;
+	    text-align: center;
+    }
+    
+   #search_container {
+		width: 98%;
+		float: none;
+		text-align: center;
+		margin-top: 15px;
+	} 
+	
+	#submit {
+		right: 0px;
+	}
+}
+
+@media only screen and (min-width: 900px) {
+    #photo_container {
+        -moz-column-count: 4;
+        -webkit-column-count: 4;
+        column-count: 4;
+    }
+    
+    #logo {
+	    float: left;
+	    width: 25%;
+	    text-align: left;
+    }
+    
+   #search_container {
+		width: 70%;
+		float: right;
+		text-align: right;
+	} 
+	
+	#submit {
+		right: -2px;
+	}
+}
+
+@media only screen and (min-width: 1100px) {
+    #photo_container {
+        -moz-column-count: 5;
+        -webkit-column-count: 5;
+        column-count: 5;
+    }
+    
+     #logo {
+	    float: left;
+	    width: 25%;
+	    text-align: left;
+    }
+    
+   #search_container {
+		width: 70%;
+		float: right;
+		text-align: right;
+	} 
+	
+	#submit {
+		right: 2px;
+	}
+}
